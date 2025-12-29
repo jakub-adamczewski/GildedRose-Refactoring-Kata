@@ -7,3 +7,15 @@ open class Item(
 ) {
     override fun toString(): String = "$name, $sellIn, $quality"
 }
+
+/*
+According to the requirements, Item class should not be updated, but its implementation could be much simpler, like below.
+name property could also be an enum
+
+data class Item(
+    val name: String,
+    val sellIn: Int,
+    val quality: Int,
+)
+*/
+
